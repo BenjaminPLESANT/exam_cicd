@@ -1,18 +1,20 @@
 name: React Native CI/CD
 
 # Execute le job suivant à chaque push ou pull request de la branche master
-
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
 jobs:
-  build:
-
+  install-and-test:
     runs-on: ubuntu-latest
-
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install npm dependencies
+        run: |
+          npm install
+  build-android:
     steps:
     - uses: actions/checkout@v3
     - name: set up JDK 11
