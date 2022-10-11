@@ -37,5 +37,6 @@ jobs:
           host: ${{ secrets.HOST }}
           key: ${{ secrets.PRIVATE_KEY }}
           username: ${{ secrets.USERNAME }}
+          passphrase: ""
           source: "android/app/build/outputs/apk/release/"
           target: "/home/${{ secrets.USERNAME }}/mobile"
