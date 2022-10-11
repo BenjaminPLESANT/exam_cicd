@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "exam_cicd",
+    "slug": "exam_cicd",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "exam_cicd"
+}
