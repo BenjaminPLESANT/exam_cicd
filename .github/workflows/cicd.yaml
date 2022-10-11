@@ -38,3 +38,5 @@ jobs:
           source: "android/app/build/outputs/apk/release/"
           # Dans le le dossier mobile de l'utilisateur
           target: "/home/${{ secrets.USERNAME }}/mobile"
+          strip_components: 4
+          run: cd android/app/build/outputs/apk/ && mv release/ ~/mobile
